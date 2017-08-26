@@ -9,6 +9,7 @@ import log from '../util/log';
 
 // UPDATE DEPENDENCY VERSIONS HERE
 const DEFAULT_DEPENDENCIES = {
+  // ADD APOLLO +
   expo: '^20.0.0',
   react: '16.0.0-alpha.12',
   'react-native': '^0.47.0',
@@ -16,6 +17,7 @@ const DEFAULT_DEPENDENCIES = {
 
 // TODO figure out how this interacts with ejection
 const DEFAULT_DEV_DEPENDENCIES = {
+  // ADD FAKER +
   'jest-expo': '~20.0.0',
   'react-test-renderer': '16.0.0-alpha.12',
 };
@@ -65,6 +67,7 @@ https://github.com/npm/npm/issues/16991
   appPackage.main = './node_modules/native-graphql-scripts/build/bin/crna-entry.js';
   appPackage.scripts = {
     start: 'native-graphql-scripts start',
+    graphql: 'native-graphql-scripts graphql',
     eject: 'native-graphql-scripts eject',
     android: 'native-graphql-scripts android',
     ios: 'native-graphql-scripts ios',
@@ -154,7 +157,7 @@ Inside that directory, you can run several commands:
     You can open your app in the Expo on you phone, and open the Graphql editor and 
     explorer at http://localhost:9002/editor
   
-  ${chalk.cyan(npmOrYarn + ' graphcool')}
+  ${chalk.cyan(npmOrYarn + ' graphql')}
     Sets up live GraphQL endpoint using GraphCool.
 
   ${chalk.cyan(npmOrYarn + ' run ios')}
