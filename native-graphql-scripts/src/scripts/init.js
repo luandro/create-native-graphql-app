@@ -150,8 +150,12 @@ Success! Created ${appName} at ${appPath}
 Inside that directory, you can run several commands:
 
   ${chalk.cyan(npmOrYarn + ' start')}
-    Starts the development server so you can open your app in the Expo
-    app on your phone.
+    Starts app development server and a Faker GraphQL endpoint and editor.
+    You can open your app in the Expo on you phone, and open the Graphql editor and 
+    explorer at http://localhost:9002/editor
+  
+  ${chalk.cyan(npmOrYarn + ' graphcool')}
+    Sets up live GraphQL endpoint using GraphCool.
 
   ${chalk.cyan(npmOrYarn + ' run ios')}
     (Mac only, requires Xcode)

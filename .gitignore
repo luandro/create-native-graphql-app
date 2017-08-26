@@ -4,3 +4,5 @@ yarn-error.log
 *.tgz
 .DS_Store
 *.log
+.history
+.expo/

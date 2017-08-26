@@ -84,7 +84,9 @@ function printUsage() {
  ${dim(`\u203A Press`)} q ${dim(`to display QR code.`)}
  ${dim(`\u203A Press`)} r ${dim(`to restart packager, or`)} R ${dim(`to restart packager and clear cache.`)}
  ${dim(`\u203A Press`)} d ${dim(`to toggle development mode. (current mode: ${bold(devMode)}${chalk.reset.dim(')')}`)}
-`
+ ${dim(`\u203A Press`)} g ${dim(`to create your live GraphQL endpoint using Graph.Cool`)}
+ 
+ `
   );
 }
 
