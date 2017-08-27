@@ -9,7 +9,14 @@ import log from '../util/log';
 
 // UPDATE DEPENDENCY VERSIONS HERE
 const DEFAULT_DEPENDENCIES = {
-  // ADD APOLLO +
+  'react-apollo': '^1.4.14',
+  'react-navigation': '^1.0.0-beta.11',
+  'react-redux': '^5.0.6',
+  redux: '^3.7.2',
+  'redux-offline': '^2.0.0',
+  'apollo-client': '^1.9.1',
+  'apollo-offline': '^0.0.5',
+  'ex-react-native-i18n': '^0.0.3',
   expo: '^20.0.0',
   react: '16.0.0-alpha.12',
   'react-native': '^0.47.0',
@@ -17,7 +24,7 @@ const DEFAULT_DEPENDENCIES = {
 
 // TODO figure out how this interacts with ejection
 const DEFAULT_DEV_DEPENDENCIES = {
-  // ADD FAKER +
+  'remote-redux-devtools': '^0.5.12',
   'jest-expo': '~20.0.0',
   'react-test-renderer': '16.0.0-alpha.12',
 };
@@ -130,7 +137,9 @@ https://github.com/npm/npm/issues/16991
   log(`Installing dependencies using ${npmOrYarn}...`);
   log(); // why is this here
 
-  const proc = spawn(command, args, { stdio: 'inherit' });
+  const proc = spawn(command, args, {
+    stdio: 'inherit',
+  });
   proc.on('close', code => {
     if (code !== 0) {
       console.error(`\`${command} ${args.join(' ')}\` failed`);
