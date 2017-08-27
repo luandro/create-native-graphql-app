@@ -3,11 +3,14 @@
 import { Android, Config, Project, ProjectSettings, Simulator, UrlUtils } from 'xdl';
 
 import chalk from 'chalk';
+import path from 'path';
+import pathExists from 'path-exists';
 import indent from 'indent-string';
 import qr from 'qrcode-terminal';
 import minimist from 'minimist';
 import log from '../util/log';
 import clearConsole from '../util/clearConsole';
+import graphFaker from '../util/faker';
 
 import packager from '../util/packager';
 
@@ -65,6 +68,7 @@ For links to install the Expo app, please visit ${chalk.underline(chalk.cyan('ht
 
 Logs from serving your app will appear here. Press Ctrl+C at any time to stop.`
     );
+    graphFaker();
     printUsage();
   });
 }
@@ -84,7 +88,8 @@ function printUsage() {
  ${dim(`\u203A Press`)} q ${dim(`to display QR code.`)}
  ${dim(`\u203A Press`)} r ${dim(`to restart packager, or`)} R ${dim(`to restart packager and clear cache.`)}
  ${dim(`\u203A Press`)} d ${dim(`to toggle development mode. (current mode: ${bold(devMode)}${chalk.reset.dim(')')}`)}
- ${dim(`\u203A Press`)} g ${dim(`to create your live GraphQL endpoint using Graph.Cool`)}
+ ${dim(`\u203A Press`)} g ${dim(`to create your live GraphQL endpoint using GraphCool`)}
+ ${dim(`\u203A Press`)} i ${dim(`to import existing GraphCool project`)}
  
  `
   );
@@ -149,5 +154,17 @@ change to take effect.`
       );
       printUsage();
       return;
+    case 'g':
+      clearConsole();
+      log('Lets start creating a GraphQL Enpoint');
+      // authenticate with Graphqcool
+      // create new project
+      // print endpoint
+      return;
+    case 'i':
+      clearConsole();
+      log('Lets import your GraphCool data');
+      // get project id
+      // import using graphcool-cli
   }
 }

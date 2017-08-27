@@ -3,7 +3,6 @@ import { setDebugMessage, contactUsInSlackMessage } from '../utils/constants'
 import { makePartsEnclodesByCharacterBold } from '../utils/utils'
 import * as chalk from 'chalk'
 import figures = require('figures')
-import Raven = require('raven')
 import ora = require('ora')
 
 const debug = require('debug')('graphcool')
@@ -47,8 +46,6 @@ export default class StdOut implements Out {
     }
 
     console.error(`\n${setDebugMessage}\n${contactUsInSlackMessage}\n`)
-
-    await new Promise(resolve => Raven.captureException(error, resolve))
 
     process.exit(1)
   }
