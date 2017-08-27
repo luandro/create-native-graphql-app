@@ -1,3 +1,5 @@
+Just a programmatic version of [https://github.com/graphcool/graphcool-cli](https://github.com/graphcool/graphcool-cli) to use in [create-native-graphql-app](https://github.com/luandro/create-native-graphql-app).
+
 # graphcool-cli [![npm version](https://badge.fury.io/js/graphcool.svg)](https://badge.fury.io/js/graphcool) [![CircleCI](https://circleci.com/gh/graphcool/graphcool-cli.svg?style=svg)](https://circleci.com/gh/graphcool/graphcool-cli)
 
 📟 Manage your GraphQL backend from your terminal

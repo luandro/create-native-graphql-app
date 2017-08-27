@@ -1,5 +1,5 @@
 {
-  "name": "graphql-faker",
+  "name": "graphql-faker-programmatic",
   "version": "1.2.2",
   "description": "Mock or extend your GraphQL API with faked data. No coding required",
   "main": "dist/index.js",
@@ -16,14 +16,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/APIs-guru/graphql-faker.git"
+    "url": "git+https://github.com/APIs-guru/graphql-faker-programmatic.git"
   },
   "author": "APIs.guru <founders@apis.guru>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/APIs-guru/graphql-faker/issues"
+    "url": "https://github.com/APIs-guru/graphql-faker-programmatic/issues"
   },
-  "homepage": "https://github.com/APIs-guru/graphql-faker#readme",
+  "homepage": "https://github.com/APIs-guru/graphql-faker-programmatic#readme",
   "devDependencies": {
     "@types/express": "^4.0.37",
     "@types/express-graphql": "0.0.33",

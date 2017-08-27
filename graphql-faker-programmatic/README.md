@@ -1,3 +1,6 @@
+Just a programmatic version of [https://github.com/APIs-guru/graphql-faker](https://github.com/APIs-guru/graphql-faker) to use in [create-native-graphql-app](https://github.com/luandro/create-native-graphql-app).
+
+
 ![GraphQL Faker logo](./docs/faker-logo-text.png)
 
 # GraphQL Faker
