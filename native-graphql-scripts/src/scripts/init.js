@@ -5,6 +5,7 @@ import fse from 'fs-extra';
 import path from 'path';
 import pathExists from 'path-exists';
 import spawn from 'cross-spawn';
+import gitClone from 'git-clone';
 import log from '../util/log';
 
 // UPDATE DEPENDENCY VERSIONS HERE
@@ -103,6 +104,9 @@ https://github.com/npm/npm/issues/16991
 
   // Copy the files for the user
   await fse.copy(path.join(ownPath, 'template'), appPath);
+
+  // // Clone latest from git
+  // gitClone()
 
   // Rename gitignore after the fact to prevent npm from renaming it to .npmignore
   try {

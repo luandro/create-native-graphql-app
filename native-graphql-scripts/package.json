@@ -29,6 +29,7 @@
     "chalk": "^2.0.1",
     "cross-spawn": "^5.0.1",
     "fs-extra": "^3.0.1",
+    "git-clone": "^0.1.0",
     "graphcool-programmatic": "^1.2.1",
     "graphql-faker-programmatic": "^1.2.2",
     "indent-string": "^3.0.0",
