@@ -34,16 +34,7 @@ import {Config} from './utils/config'
 
 export default async function (command, options) {
   const env = defaultEnvironment()
-  let props = {
-    copyProjectId: options.copyProjectId || undefined ,
-    projectFile: options.projectFile || undefined ,
-    copyOptions: options.copyOptions || undefined ,
-    schemaUrl: options.schemaUrl || undefined ,
-    name: options.name || undefined ,
-    alias: options.alias || undefined ,
-    region: options.region || undefined ,
-    outputPath: options.outputPath || undefined ,
-  };
+  let props = {};
 
   switch (command) {
     
@@ -53,6 +44,16 @@ export default async function (command, options) {
         }
     
         case 'init': {
+          let props = {
+            // copyProjectId: options.copyProjectId || undefined,
+            // projectFile: options.projectFile || undefined,
+            // copyOptions: options.copyOptions || undefined,
+            // schemaUrl: options.schemaUrl || undefined,
+            // name: options.name || undefined,
+            // alias: options.alias || undefined,
+            // region: options.region || undefined,
+            outputPath: options.outputPath || 'project.graphcool',
+          };
           await checkAuth(env, 'init')
           await initCommand(props as InitProps, env)
           break
