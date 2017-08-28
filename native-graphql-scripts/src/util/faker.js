@@ -5,7 +5,7 @@ import pathExists from 'path-exists';
 
 const endpointUrl = 'https://api.graph.cool/simple/v1/';
 
-async function runFaker() {
+export default async function() {
     const projectId = await getProjectId();
     if (projectId) {
         console.log('FOUND PROJECT!', projectId);
@@ -30,5 +30,3 @@ async function getProjectId() {
         }
     });
 }
-
-export default runFaker();
