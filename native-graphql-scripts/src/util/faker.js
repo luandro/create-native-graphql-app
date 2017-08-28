@@ -1,5 +1,5 @@
-// import faker from 'graphql-faker-programmatic';
-import faker from '../../../graphql-faker-programmatic/dist';
+import faker from 'graphql-faker-programmatic';
+// import faker from '../../../graphql-faker-programmatic/dist';
 import fs from 'fs';
 import pathExists from 'path-exists';
 
