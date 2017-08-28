@@ -25,7 +25,7 @@ export const sentryDSN = 'https://6ef6eea3afb041f2aca71d08742a36d1:51bdc5643a764
 /*
  * File paths / names
  */
-export const graphcoolProjectFileName = 'project.graphcool'
+export const graphcoolProjectFileName = 'project.graphql'
 export const graphcoolCloneProjectFileName = (projectFileName?: string) => projectFileName ?
   `clone-${projectFileName.startsWith(`./`) ? projectFileName.substring(2) : projectFileName}`: `clone-${graphcoolProjectFileName}`
 export const graphcoolConfigFilePath = path.join(os.homedir(), '.graphcoolrc')
@@ -122,7 +122,7 @@ export const createdProjectMessage = (name: string, projectId: string, projectFi
 
    ${chalk.bold('Here is what you can do next:')}
 
-   1) Open ${chalk.bold(projectOutputPath || 'project.graphcool')} in your editor to update your schema.
+   1) Open ${chalk.bold(projectOutputPath || 'project.graphql')} in your editor to update your schema.
       You can push your changes using ${chalk.cyan('`graphcool push`')}.
 
    2) Use one of the following endpoints to connect to your GraphQL API:

@@ -106,7 +106,7 @@ test('Failing schema migration because of multiple project files', async t => {
 
   // dummy migration data
   const projectFile1 = 'example.graphcool'
-  const projectFile2 = 'project.graphcool'
+  const projectFile2 = 'project.graphql'
   const env = testEnvironment({})
   env.resolver.write(projectFile1, mockProjectFile2)
   env.resolver.write(projectFile2, mockProjectFile2)
@@ -129,7 +129,7 @@ test('Schema migration displaying data loss', async t => {
   fetchMock.once(systemAPIEndpoint, JSON.parse(mockedPushSchema1ResponseError))
 
   // dummy migration data
-  const projectFile = 'project.graphcool'
+  const projectFile = 'project.graphql'
   const env = testEnvironment({})
   env.resolver.write(projectFile, mockModifiedProjectFile1)
   env.resolver.write(graphcoolConfigFilePath, '{"token": ""}')
@@ -149,7 +149,7 @@ test('Status with potential data loss', async t => {
   fetchMock.once(systemAPIEndpoint, JSON.parse(mockedPushSchemaResponseError))
 
   // dummy migration data
-  const projectFile = 'project.graphcool'
+  const projectFile = 'project.graphql'
   const env = testEnvironment({})
   env.resolver.write(projectFile, mockProjectFile2)
   env.resolver.write(graphcoolConfigFilePath, '{"token": ""}')

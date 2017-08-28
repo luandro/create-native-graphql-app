@@ -10,7 +10,7 @@ import {
 const debug = require('debug')('graphcool')
 
 /*
- * Project File (.../project.graphcool)
+ * Project File (.../project.graphql)
  */
 
 export function writeProjectFile(projectInfo: ProjectInfo, resolver: Resolver, path?: string) {

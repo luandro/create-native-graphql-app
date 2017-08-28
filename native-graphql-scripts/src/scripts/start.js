@@ -157,9 +157,6 @@ change to take effect.`
     case 'g':
       clearConsole();
       log('Lets start creating a GraphQL Enpoint');
-      // authenticate with Graphqcool
-      // create new project
-      // print endpoint
       const { success, error } = await GraphCool();
       if (!success) {
         log(chalk.red(error.message));

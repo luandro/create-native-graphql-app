@@ -18,7 +18,7 @@ Watch this [video tutorial](https://www.youtube.com/watch?v=sf0ZkyalSTg) 🎥 to
 # Create a new GraphQL backend
 graphcool init
 
-# Edit `project.graphcool` to change schema and push updates using...
+# Edit `project.graphql` to change schema and push updates using...
 graphcool push
 ```
 

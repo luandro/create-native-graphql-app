@@ -45,7 +45,7 @@ export const usageInit = `
     --copy-opts <options>      Include items for copy (options: data, mutation-callbacks, all (default), none)
     -n, --name <name>          Project name
     -a, --alias <alias>        Project alias
-    -o, --output <path>        Path to output project file (default: project.graphcool)
+    -o, --output <path>        Path to output project file (default: project.graphql)
     -r, --region <region>      AWS Region (options: us-west-2 (default), eu-west-1, ap-northeast-1)
     -h, --help                 Output usage information
       
@@ -69,16 +69,16 @@ export const usagePull = `
   
   Options:
     -p, --project <id | alias>  ID or alias of source project (defaults to ID or alias from project file)
-    -o, --output <path>         Path to output project file (default: project.graphcool)
+    -o, --output <path>         Path to output project file (default: project.graphql)
     -f, --force                 Override project file
     -h, --help                  Output usage information
      
   ${chalk.dim('Examples:')}
   
-  ${chalk.gray('-')} Download latest project file for current project ([<project-file>] defaults to project.graphcool)
+  ${chalk.gray('-')} Download latest project file for current project ([<project-file>] defaults to project.graphql)
     ${chalk.cyan('$ graphcool pull')}
   
-  ${chalk.gray('-')} Download latest project for specific project (written to project.graphcool)
+  ${chalk.gray('-')} Download latest project for specific project (written to project.graphql)
     ${chalk.cyan('$ graphcool pull --project <project-id | alias>')}
     
   ${chalk.gray('-')} Download latest project for specific project (written to example.graphcool)
@@ -97,7 +97,7 @@ export const usagePush = `
      
   ${chalk.dim('Examples:')}
       
-  ${chalk.gray('-')} Push local changes from current project file ([<project-file>] defaults to project.graphcool)
+  ${chalk.gray('-')} Push local changes from current project file ([<project-file>] defaults to project.graphql)
     ${chalk.cyan('$ graphcool push')}
   
   ${chalk.gray('-')} Push local changes from specific project file 
@@ -119,7 +119,7 @@ export const usageExport = `
      
   ${chalk.dim('Examples:')}
       
-  ${chalk.gray('-')} Export data from current project ([<project-file>] defaults to project.graphcool)
+  ${chalk.gray('-')} Export data from current project ([<project-file>] defaults to project.graphql)
     ${chalk.cyan('$ graphcool export')}
   
   ${chalk.gray('-')} Export data from specific project file 
@@ -158,7 +158,7 @@ export const usageStatus = `
     
   ${chalk.dim('Examples:')}
       
-  ${chalk.gray('-')} Status for current project ([<project-file>] defaults to project.graphcool)
+  ${chalk.gray('-')} Status for current project ([<project-file>] defaults to project.graphql)
     ${chalk.cyan('$ graphcool status')}
   
   ${chalk.gray('-')} Status for specific project
@@ -178,7 +178,7 @@ export const usageEndpoints = `
     
   ${chalk.dim('Examples:')}
       
-  ${chalk.gray('-')} Display API endpoints for current project ([<project-file>] defaults to project.graphcool)
+  ${chalk.gray('-')} Display API endpoints for current project ([<project-file>] defaults to project.graphql)
     ${chalk.cyan('$ graphcool endpoints')}
   
   ${chalk.gray('-')} Display API endpoints for specific project
@@ -196,7 +196,7 @@ export const usageConsole = `
     
   ${chalk.dim('Examples:')}
       
-  ${chalk.gray('-')} Open console for current project ([<project-file>] defaults to project.graphcool)
+  ${chalk.gray('-')} Open console for current project ([<project-file>] defaults to project.graphql)
     ${chalk.cyan('$ graphcool console')}
   
   ${chalk.gray('-')} Open console for specific project
@@ -214,7 +214,7 @@ export const usagePlayground = `
     
   ${chalk.dim('Examples:')}
       
-  ${chalk.gray('-')} Open playground for current project ([<project-file>] defaults to project.graphcool)
+  ${chalk.gray('-')} Open playground for current project ([<project-file>] defaults to project.graphql)
     ${chalk.cyan('$ graphcool playground')}
   
   ${chalk.gray('-')} Open playground for specific project

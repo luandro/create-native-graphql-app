@@ -32,9 +32,18 @@ const {version} = require('../../package.json')
 
 import {Config} from './utils/config'
 
-export default async function (command) {
+export default async function (command, options) {
   const env = defaultEnvironment()
-  let props = {};
+  let props = {
+    copyProjectId: options.copyProjectId || undefined ,
+    projectFile: options.projectFile || undefined ,
+    copyOptions: options.copyOptions || undefined ,
+    schemaUrl: options.schemaUrl || undefined ,
+    name: options.name || undefined ,
+    alias: options.alias || undefined ,
+    region: options.region || undefined ,
+    outputPath: options.outputPath || undefined ,
+  };
 
   switch (command) {
     
