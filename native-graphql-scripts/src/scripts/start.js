@@ -165,7 +165,7 @@ change to take effect.`
     // case 'i':
     //   clearConsole();
     //   log('Lets import your GraphCool data');
-      // get project id
-      // import using graphcool-cli
+    // get project id
+    // import using graphcool-cli
   }
 }
