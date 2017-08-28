@@ -166,7 +166,7 @@ export default async function(args) {
 				res.status(500).send(err.message);
 			}
 		});
-
+		console.log(__dirname)
 		app.use('/editor', express.static(path.join(__dirname, 'editor')));
 
 		app.listen(argv.port);
