@@ -15,10 +15,11 @@ class SignupContainer extends React.Component {
 	}
 }
 
-const binomialQuery = gql`
+const userQuery = gql`
 	query {
-		allPlants(orderBy: createdAt_DESC) {
-			binomial
+		user(id: 9) {
+			name
+			email
 		}
 	}
 `;
@@ -32,6 +33,6 @@ const offlineOptions = {
 	}
 };
 
-export const Login = graphql(binomialQuery, offlineOptions)(LoginContainer);
+export const Login = graphql(userQuery, offlineOptions)(LoginContainer);
 
-export const Signup = graphql(binomialQuery, offlineOptions)(SignupContainer);
+export const Signup = graphql(userQuery, offlineOptions)(SignupContainer);

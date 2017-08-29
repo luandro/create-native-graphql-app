@@ -1,6 +1,6 @@
 {
   "name": "graphql-faker-programmatic",
-  "version": "1.2.4",
+  "version": "1.2.6",
   "description": "Mock or extend your GraphQL API with faked data. No coding required",
   "main": "dist/index.js",
   "bin": "dist/index.js",
@@ -42,7 +42,7 @@
     "express": "^4.15.4",
     "express-graphql": "github:apis-guru/express-graphql#rootValue_dist",
     "faker": "^4.1.0",
-    "graphql": "github:apis-guru/graphql-js#directives-fork-dist",
+    "graphql": "^0.11.2",
     "lodash": "^4.17.4",
     "node-fetch": "^1.7.2",
     "opn": "^5.1.0",

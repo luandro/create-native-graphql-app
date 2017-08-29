@@ -1,3 +1,8 @@
+type User {
+  name: String @fake(type: firstName)
+  email: String @fake(type: email)
+}
+
 type Company {
   name: String @fake(type:companyName)
   industry: String @examples(values: ["IT", "Manufacturing", "Medicine", "Media"])
@@ -13,6 +18,7 @@ type Employee {
 }
 
 type Query {
+  user(id: ID): User
   employee(id: ID): Employee
   company(id: ID): Company
   allCompanies: [Company!]

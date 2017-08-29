@@ -8,13 +8,13 @@ import offline from 'apollo-offline';
 
 let composeEnhancers = composeWithDevTools({
     realtime: true,
-    name: 'Cultivar',
+    name: 'graphql-app',
 });
 
 // 1. Wrap your network interface
 const { enhancer, networkInterface } = offline(
   createNetworkInterface({
-    uri: `https://api.graph.cool/simple/v1/cj6pnt5kr0uh80181o4bl7dkj`,
+    uri: `192.168.100.101:9002/graphql`,
   }),
 );
 
@@ -29,7 +29,7 @@ const customConfig = {
   persistOptions: {
     storage: AsyncStorage,
   },
-  persistCallback: () => { console.log('CALLLLLLBACK!') },
+  persistCallback: () => { console.log('persisting!') }, //remove this once done testing
 }
 
 
