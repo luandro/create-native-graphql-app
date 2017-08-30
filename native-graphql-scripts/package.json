@@ -1,6 +1,6 @@
 {
   "name": "native-graphql-scripts",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Configuration and scripts for Create Native GraphQL App.",
   "license": "BSD-3-Clause",
   "keywords": [
@@ -30,8 +30,8 @@
     "cross-spawn": "^5.0.1",
     "fs-extra": "^3.0.1",
     "git-clone": "^0.1.0",
-    "graphcool-programmatic": "^1.2.1",
-    "graphql-faker-programmatic": "^1.2.4",
+    "graphcool-programmatic": "^1.2.4",
+    "graphql-faker-programmatic": "^1.2.7",
     "indent-string": "^3.0.0",
     "inquirer": "^3.0.1",
     "match-require": "^2.0.0",
